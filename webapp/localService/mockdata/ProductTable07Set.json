@@ -1,0 +1,10 @@
+[
+    {
+        "ProductId": "00001",
+        "ProductName": "Notebook"
+    },
+    {
+        "ProductId": "00002",
+        "ProductName": "Screen"
+    }
+]

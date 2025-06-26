@@ -1,0 +1,14 @@
+{
+    "objective": "<p><strong>Objective:</strong></p><p>Learn how to make popups (like <strong>Dialogs</strong>) more accessible by ensuring that each dialog has a proper label using the <strong>ariaLabelledBy</strong>.</p>",
+    "task": "<p><strong>Task:</strong></p><p>You are given a <strong>Dialog</strong> with content but no accessible name.</p><p>Set up a title and an accessible label using the <strong>ariaLabelledBy</strong> attribute, ensuring that screen readers can render the dialog accessible name and title when it opens.</p>",
+    "expectedResult": "<p><strong>Expected Result:</strong></p>",
+    "instruction": "<p><strong>Instruction:</strong></p><p>In the file <strong>/webapp/exercises/Exercise12.fragment.xml</strong> add the <strong>ariaLabelledBy</strong> property in the <strong>Dialog</strong> control.</p>",
+    "howToTest": "<p><strong>How to test:</strong></p><ul><li>Use NVDA (Screen Reader) to inspect the Dialog. It should vocalize its title.</li></ul>",
+    "helpFile": "<p>file <strong>/webapp/exercises/Exercise12.fragment.xml</strong></p>",
+    "helpCode": "<code>&lt;Dialog<br/>&nbsp;&nbsp;id=\"idExercise12Dialog\"<br/>&nbsp;&nbsp;title=\"Product\"<br/>&nbsp;&nbsp;<strong>//Take a look at ariaLabelledBy association for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Dialog\"/>sap.m.Dialog</a> control</strong><br/>&nbsp;&nbsp;class=\"sapUiResponsivePadding--content sapUiResponsivePadding--header\"<br/>&gt;<br/>&nbsp;&nbsp;&lt;content&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id=\"idNotebookExercise12DialogText\"<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text=\"{i18n&gt;Exercise12.fragment.dialog.text}\"<br/>&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br/>&nbsp;&nbsp;&lt;/content&gt;</code>",
+    "parentFragmentId": "idAccessibleNameFragment",
+    "fragmentId": "idProvidingLabelsForPopupsFragment",
+    "answerFile": "Exercise12.fragment.xml",
+    "answerPass": "aG9ycm9y",
+    "answerCode": "PGNvcmU6RnJhZ21lbnREZWZpbml0aW9uCiAgICB4bWxucz0ic2FwLm0iCiAgICB4bWxuczpjb3JlPSJzYXAudWkuY29yZSIKPgogICAgPERpYWxvZwogICAgICAgIGlkPSJpZEV4ZXJjaXNlMTJEaWFsb2ciCiAgICAgICAgdGl0bGU9IlByb2R1Y3QiCiAgICAgICAgYXJpYUxhYmVsbGVkQnk9ImlkTm90ZWJvb2tFeGVyY2lzZTEyRGlhbG9nVGV4dCIKICAgICAgICBjbGFzcz0ic2FwVWlSZXNwb25zaXZlUGFkZGluZy0tY29udGVudCBzYXBVaVJlc3BvbnNpdmVQYWRkaW5nLS1oZWFkZXIiCiAgICA+CiAgICAgICAgPGNvbnRlbnQ+CiAgICAgICAgICAgIDxUZXh0CiAgICAgICAgICAgICAgICBpZD0iaWROb3RlYm9va0V4ZXJjaXNlMTJEaWFsb2dUZXh0IgogICAgICAgICAgICAgICAgdGV4dD0iTm90ZWJvb2siCiAgICAgICAgICAgIC8+CiAgICAgICAgPC9jb250ZW50PgogICAgICAgIDxidXR0b25zPgogICAgICAgICAgICA8QnV0dG9uCiAgICAgICAgICAgICAgICBpZD0iaWRDbG9zZUV4ZXJjaXNlMTJEaWFsb2dCdXR0b24iCiAgICAgICAgICAgICAgICB0ZXh0PSJDbG9zZSIKICAgICAgICAgICAgICAgIHdpZHRoPSI2MHB4IgogICAgICAgICAgICAgICAgcHJlc3M9Im9uQ2xvc2VCdXR0b25FeGVyY2lzZTEyRGlhbG9nUHJlc3MiCiAgICAgICAgICAgIC8+CiAgICAgICAgPC9idXR0b25zPgogICAgPC9EaWFsb2c+CjwvY29yZTpGcmFnbWVudERlZmluaXRpb24+"
+}

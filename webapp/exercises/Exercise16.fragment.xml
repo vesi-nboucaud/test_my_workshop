@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Popover
+        id="idExercise16Popover"
+        title="{i18n>Exercise16.fragment.popover.title}"
+        class="sapUiContentPadding"
+    >
+        <dependents>
+            <!-- //Take a look at sap.ui.core.CommandExecution control -->
+            <!-- //For Save command call onPopoverSave method -->
+            <!-- //For Delete command call onPopoverDelete method -->
+        </dependents>
+        <content>
+            <Input id="idExercise16Input" />
+        </content>
+    </Popover>
+</core:FragmentDefinition>

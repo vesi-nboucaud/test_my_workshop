@@ -1,0 +1,272 @@
+{
+  "_version": "1.48.0",
+  "sap.app": {
+    "id": "com.vesi.zfaca_accessibility_training",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.15.2",
+      "toolsId": "39162148-9e71-47d3-b549-46f927edfde5"
+    },
+    "dataSources": {
+      "exercise01FragmentData": {
+        "uri": "localService/mockdata/Exercise01.json",
+        "type": "JSON"
+      },
+      "exercise02FragmentData": {
+        "uri": "localService/mockdata/Exercise02.json",
+        "type": "JSON"
+      },
+      "exercise03FragmentData": {
+        "uri": "localService/mockdata/Exercise03.json",
+        "type": "JSON"
+      },
+      "exercise04FragmentData": {
+        "uri": "localService/mockdata/Exercise04.json",
+        "type": "JSON"
+      },
+      "exercise05FragmentData": {
+        "uri": "localService/mockdata/Exercise05.json",
+        "type": "JSON"
+      },
+      "exercise06FragmentData": {
+        "uri": "localService/mockdata/Exercise06.json",
+        "type": "JSON"
+      },
+      "exercise07FragmentData": {
+        "uri": "localService/mockdata/Exercise07.json",
+        "type": "JSON"
+      },
+      "exercise08FragmentData": {
+        "uri": "localService/mockdata/Exercise08.json",
+        "type": "JSON"
+      },
+      "exercise09FragmentData": {
+        "uri": "localService/mockdata/Exercise09.json",
+        "type": "JSON"
+      },
+      "exercise10FragmentData": {
+        "uri": "localService/mockdata/Exercise10.json",
+        "type": "JSON"
+      },
+      "exercise11FragmentData": {
+        "uri": "localService/mockdata/Exercise11.json",
+        "type": "JSON"
+      },
+      "exercise12FragmentData": {
+        "uri": "localService/mockdata/Exercise12.json",
+        "type": "JSON"
+      },
+      "exercise13FragmentData": {
+        "uri": "localService/mockdata/Exercise13.json",
+        "type": "JSON"
+      },
+      "exercise14FragmentData": {
+        "uri": "localService/mockdata/Exercise14.json",
+        "type": "JSON"
+      },
+      "exercise15FragmentData": {
+        "uri": "localService/mockdata/Exercise15.json",
+        "type": "JSON"
+      },
+      "exercise16FragmentData": {
+        "uri": "localService/mockdata/Exercise16.json",
+        "type": "JSON"
+      },
+      "exercise17FragmentData": {
+        "uri": "localService/mockdata/Exercise17.json",
+        "type": "JSON"
+      },
+      "exercise18FragmentData": {
+        "uri": "localService/mockdata/Exercise18.json",
+        "type": "JSON"
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "zfaca_accessibility_training-display": {
+          "semanticObject": "zfaca_accessibility_training",
+          "action": "display",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.108.26",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.vesi.zfaca_accessibility_training.i18n.i18n"
+        }
+      },
+      "oExercise01FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise01FragmentData"
+      },
+      "oExercise02FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise02FragmentData"
+      },
+      "oExercise03FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise03FragmentData"
+      },
+      "oExercise04FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise04FragmentData"
+      },
+      "oExercise05FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise05FragmentData"
+      },
+      "oExercise06FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise06FragmentData"
+      },
+      "oExercise07FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise07FragmentData"
+      },
+      "oExercise08FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise08FragmentData"
+      },
+      "oExercise09FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise09FragmentData"
+      },
+      "oExercise10FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise10FragmentData"
+      },
+      "oExercise11FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise11FragmentData"
+      },
+      "oExercise12FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise12FragmentData"
+      },
+      "oExercise13FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise13FragmentData"
+      },
+      "oExercise14FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise14FragmentData"
+      },
+      "oExercise15FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise15FragmentData"
+      },
+      "oExercise16FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise16FragmentData"
+      },
+      "oExercise17FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise17FragmentData"
+      },
+      "oExercise18FragmentModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "exercise18FragmentData"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.vesi.zfaca_accessibility_training.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteMain",
+          "pattern": ":?query:",
+          "target": [
+            "TargetMain"
+          ]
+        },
+        {
+          "name": "RouteDefineLandmark",
+          "pattern": "define-landmark",
+          "target": [
+            "TargetDefineLandmark"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetMain": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Main",
+          "viewName": "Main"
+        },
+        "TargetDefineLandmark": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "DefineLandmark",
+          "viewName": "DefineLandmark"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.vesi.zfaca_accessibility_training.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

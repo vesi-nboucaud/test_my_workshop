@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: com.vesi.zfaca_accessibility_training
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: http://dvp:443
+          client: '550'
+        credentials:
+          username: env:S4HANA_USER
+          password: env:S4HANA_PWD
+        app:
+          name: ZFACA_ACCTRAIN1
+          package: ZDEV_CA_FIORI_TRAINING
+          transport: DVPK9A86BP
+        exclude:
+          - /test/

@@ -1,0 +1,32 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:uxap="sap.uxap"
+>
+    <uxap:ObjectPageSection
+        id="idErrorManagementContextChangesObjectPageSection"
+        title="{i18n>ErrorManagementContextChanges.fragment.title}"
+        titleLevel="H2"
+        titleUppercase="false"
+        showTitle="false"
+        class="sapUiSmallMarginTop"
+    >
+        <uxap:subSections>
+            <core:Fragment
+                id="idFieldValidationFragment"
+                fragmentName="com.vesi.zfaca_accessibility_training.view.fragment.ErrorManagementContextChanges.FieldValidation"
+                type="XML"
+            />
+            <core:Fragment
+                id="idMessageStripFragment"
+                fragmentName="com.vesi.zfaca_accessibility_training.view.fragment.ErrorManagementContextChanges.MessageStrip"
+                type="XML"
+            />
+            <core:Fragment
+                id="idInvisibleMessagingFragment"
+                fragmentName="com.vesi.zfaca_accessibility_training.view.fragment.ErrorManagementContextChanges.InvisibleMessaging"
+                type="XML"
+            />
+        </uxap:subSections>
+    </uxap:ObjectPageSection>
+</core:FragmentDefinition>

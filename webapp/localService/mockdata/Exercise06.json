@@ -1,0 +1,14 @@
+{
+    "objective": "<p><strong>Objective:</strong></p><p>Learn how to enhance accessibility by providing extra context for an input field using the <strong>ariaDescribedBy</strong> or <strong>Description property</strong>.</p>",
+    "task": "<p><strong>Task:</strong></p><p>You are provided with a input field with Description where the user needs to input a temperature value.</p><p>However, there is no clear indication of whether the temperature should be entered in Celsius or Fahrenheit.</p><p>Modify the code to ensure that this extra information (Description) is conveyed to users.</p>",
+    "expectedResult": "<p><strong>Expected Result:</strong></p>",
+    "instruction": "<p><strong>Instruction:</strong></p><p>In the file <strong>/webapp/exercises/Exercise06.fragment.xml</strong> add the <strong>description</strong> property in the <strong>Input</strong> control.</p>",
+    "howToTest": "<p><strong>How to test:</strong></p><ul><li>Use NVDA (Screen Reader) to inspect the Input Control. It should vocalize the Label and the Description when the Input Control is focused.</li></ul>",
+    "helpFile": "<p>file <strong>/webapp/exercises/Exercise06.fragment.xml</strong></p>",
+    "helpCode": "<code>&lt;Input<br/>&nbsp;&nbsp;id=\"idExercise06Input\"<br/>&nbsp;&nbsp;<strong>//Take a look at description property for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Input\"/>sap.m.Input</a> control</strong><br/>/&gt;</code>",
+    "parentFragmentId": "idAccessibleNameFragment",
+    "fragmentId": "idInputDescriptionManagedByAriaDescribedByFragment",
+    "answerFile": "Exercise06.fragment.xml",
+    "answerPass": "Y3J1aXNl",
+    "answerCode": "PGNvcmU6RnJhZ21lbnREZWZpbml0aW9uCiAgICB4bWxucz0ic2FwLm0iCiAgICB4bWxuczpjb3JlPSJzYXAudWkuY29yZSIKPgogICAgPExhYmVsCiAgICAgICAgaWQ9ImlkVGVtcGVyYXR1cmVFeGVyY2lzZTA2TGFiZWwiCiAgICAgICAgbGFiZWxGb3I9ImlkRXhlcmNpc2UwNklucHV0IgogICAgICAgIHdpZHRoPSIxNTBweCIKICAgICAgICBjbGFzcz0ic2FwVWlTbWFsbE1hcmdpbkVuZCIKICAgICAgICB0ZXh0QWxpZ249IkVuZCIKICAgICAgICB0ZXh0PSJ7aTE4bj5FeGVyY2lzZTA2LmZyYWdtZW50LmxhYmVsfSIKICAgIC8+CiAgICA8SW5wdXQKICAgICAgICBpZD0iaWRFeGVyY2lzZTA2SW5wdXQiCiAgICAgICAgZGVzY3JpcHRpb249IkNlbHNpdXMiCiAgICAvPgo8L2NvcmU6RnJhZ21lbnREZWZpbml0aW9uPg=="
+}

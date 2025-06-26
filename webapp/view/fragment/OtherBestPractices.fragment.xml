@@ -1,0 +1,30 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:uxap="sap.uxap"
+>
+    <uxap:ObjectPageSection
+        id="idOtherBestPracticesObjectPageSection"
+        title="{i18n>OtherBestPractices.fragment.title}"
+        titleLevel="H2"
+        titleUppercase="false"
+        showTitle="false"
+        class="sapUiSmallMarginTopBottom"
+    >
+        <uxap:heading>
+            <Title
+                id="idBlankEmptyValuesExercise18Title"
+                text="{i18n>Exercise18.fragment.title}"
+                level="H2"
+            />
+        </uxap:heading>
+
+        <uxap:subSections>
+            <core:Fragment
+                id="idBlankEmptyValuesFragment"
+                fragmentName="com.vesi.zfaca_accessibility_training.view.fragment.OtherBestPractices.BlankEmptyValues"
+                type="XML"
+            />
+        </uxap:subSections>
+    </uxap:ObjectPageSection>
+</core:FragmentDefinition>

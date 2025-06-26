@@ -1,0 +1,19 @@
+{
+    "objective": "<p><strong>Objective:</strong></p><p>Learn the importance of assigning the <strong>ariaHasPopup</strong> property to buttons that trigger popups, menus, or lists.</p>",
+    "task": "<p><strong>Task:</strong></p><p>You are provided with two Buttons. The first one opens a Dialog and the second one a Menu.</p><p>Set up the most relevant ariaHasPopup value for each Button.</p>",
+    "expectedResult": "<p><strong>Expected Result:</strong></p>",
+    "instruction1": "<p><strong>Instruction:</strong></p><p>In the file <strong>/webapp/exercises/Exercise02_Dialog.fragment.xml</strong> add the <strong>ariaHasPopup</strong> property in the <strong>Button</strong> control.</p>",
+    "instruction2": "<p><strong>Instruction:</strong></p><p>In the file <strong>/webapp/exercises/Exercise02_Menu.fragment.xml</strong> add the <strong>ariaHasPopup</strong> property in the <strong>Button</strong> control.</p>",
+    "howToTest": "<p><strong>How to test:</strong></p><ul><li>Use NVDA (Screen Reader) to inspect each Button. It should vocalize whether the Button opens a Dialog or a Menu.</li><li>In Chrome Inspector go to the Accessibility Tab and verify the value of hasPopup in Computed Properties.</li></ul>",
+    "helpFile1": "<p>file <strong>/webapp/exercises/Exercise02_Dialog.fragment.xml</strong></p>",
+    "helpCode1": "<code>&lt;Button<br/>&nbsp;&nbsp;id=\"idOpenDialogExercise02Button\"<br/>&nbsp;&nbsp;text=\"{i18n>Exercise02.fragment.dialog.button.open}\"<br/>&nbsp;&nbsp;icon=\"sap-icon://action\"<br/>&nbsp;&nbsp;width=\"150px\"<br/>&nbsp;&nbsp;<strong>//Take a look at ariaHasPopup property for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Button\"/>sap.m.Button</a> control</strong><br/>&nbsp;&nbsp;press=\"onOpenDialogButtonExercise02Press\"<br/>/&gt;</code>",
+    "helpFile2": "<p>file <strong>/webapp/exercises/Exercise02_Menu.fragment.xml</strong></p>",
+    "helpCode2": "<code>&lt;Button<br/>&nbsp;&nbsp;id=\"idOpenMenuExercise02Button\"<br/>&nbsp;&nbsp;text=\"{i18n>Exercise02.fragment.menu.button.open}\"<br/>&nbsp;&nbsp;icon=\"sap-icon://menu\"<br/>&nbsp;&nbsp;width=\"150px\"<br/>&nbsp;&nbsp;<strong>//Take a look at ariaHasPopup property for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Button\"/>sap.m.Button</a> control</strong><br/>&nbsp;&nbsp;press=\"onOpenMenuButtonExercise02Press\"<br/>/&gt;</code>",
+    "parentFragmentId": "idRoleFragment",
+    "fragmentId": "idDefineAriaHasPopupFragment",
+    "answerPass": "bW9zcXVpdG8=",
+    "answerFile1": "Exercise02_Dialog.fragment.xml",
+    "answerCode1": "PGNvcmU6RnJhZ21lbnREZWZpbml0aW9uCiAgICB4bWxucz0ic2FwLm0iCiAgICB4bWxuczpjb3JlPSJzYXAudWkuY29yZSIKPgogICAgPEJ1dHRvbgogICAgICAgIGlkPSJpZE9wZW5EaWFsb2dFeGVyY2lzZTAyQnV0dG9uIgogICAgICAgIHRleHQ9IntpMThuPkV4ZXJjaXNlMDIuZnJhZ21lbnQuZGlhbG9nLmJ1dHRvbi5vcGVufSIKICAgICAgICBpY29uPSJzYXAtaWNvbjovL2FjdGlvbiIKICAgICAgICB3aWR0aD0iMTUwcHgiCiAgICAgICAgYXJpYUhhc1BvcHVwPSJEaWFsb2ciCiAgICAgICAgcHJlc3M9Im9uT3BlbkRpYWxvZ0J1dHRvbkV4ZXJjaXNlMDJQcmVzcyIKICAgIC8+CjwvY29yZTpGcmFnbWVudERlZmluaXRpb24+",
+    "answerFile2": "Exercise02_Menu.fragment.xml",
+    "answerCode2": "PGNvcmU6RnJhZ21lbnREZWZpbml0aW9uCiAgICB4bWxucz0ic2FwLm0iCiAgICB4bWxuczpjb3JlPSJzYXAudWkuY29yZSIKPgogICAgPEJ1dHRvbgogICAgICAgIGlkPSJpZE9wZW5NZW51RXhlcmNpc2UwMkJ1dHRvbiIKICAgICAgICB0ZXh0PSJ7aTE4bj5FeGVyY2lzZTAyLmZyYWdtZW50Lm1lbnUuYnV0dG9uLm9wZW59IgogICAgICAgIGljb249InNhcC1pY29uOi8vbWVudSIKICAgICAgICB3aWR0aD0iMTUwcHgiCiAgICAgICAgYXJpYUhhc1BvcHVwPSJNZW51IgogICAgICAgIHByZXNzPSJvbk9wZW5NZW51QnV0dG9uRXhlcmNpc2UwMlByZXNzIgogICAgLz4KPC9jb3JlOkZyYWdtZW50RGVmaW5pdGlvbj4="
+}

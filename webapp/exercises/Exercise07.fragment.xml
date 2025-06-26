@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Table
+        id="idProductTableSetExercise07Table"
+        items="{ path: '/ProductTable07Set', templateShareable: false }"
+        autoPopinMode="true"
+    >
+        <columns>
+            <Column id="idProductNameExercise07Column">
+                <Text
+                    id="idProductNameExercise07Text"
+                    text="{i18n>Exercise07.fragment.table.column.text.productName}"
+                />
+            </Column>
+            <Column id="idProductIdExercise07Column">
+                <Text
+                    id="idProductIdExercise07Text"
+                    text="{i18n>Exercise07.fragment.table.column.text.productId}"
+                />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem id="idExercise07ColumnListItem">
+                <cells>
+                    <ObjectIdentifier
+                        id="idProductNameExercise07ObjectIdentifier"
+                        title="{ProductName}"
+                    />
+                    <ObjectIdentifier
+                        id="idProductIdExercise07ObjectIdentifier"
+                        title="{ProductId}"
+                    />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Label
+        id="idFirstNameExercise04Label"
+        width="150px"
+        class="sapUiSmallMarginEnd"
+        text="{i18n>Exercise04.fragment.label}"
+    />
+    <Input id="idExercise04Input" />
+</core:FragmentDefinition>

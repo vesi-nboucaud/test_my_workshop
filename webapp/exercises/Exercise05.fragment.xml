@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+>
+    <form:SimpleForm
+        id="idExercise05SimpleForm"
+        editable="true"
+    >
+        <Label
+            id="idPostalCodeCityExercise05Label"
+            text="{i18n>Exercise05.fragment.form.label}"
+        />
+        <Input
+            id="idExercise05PostalCodeInput"
+            value="75000"
+        />
+        <Input
+            id="idExercise05CityInput"
+            value="Paris"
+        />
+    </form:SimpleForm>
+</core:FragmentDefinition>

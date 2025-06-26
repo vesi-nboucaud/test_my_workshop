@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Label
+        id="idTemperatureExercise06Label"
+        labelFor="idExercise06Input"
+        width="150px"
+        class="sapUiSmallMarginEnd"
+        textAlign="End"
+        text="{i18n>Exercise06.fragment.label}"
+    />
+    <Input
+        id="idExercise06Input"
+    />
+</core:FragmentDefinition>

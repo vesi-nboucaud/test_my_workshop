@@ -1,0 +1,72 @@
+[
+    {
+        "PurchaseOrder": "902380118",
+        "Type": "ZSTD",
+        "TypeDescription": "Material",
+        "Category": "P",
+        "CategoryDescription": "Project with GR",
+        "Supplier": "11096070",
+        "SupplierName": "INTERACT SYSTEMES",
+        "FullDelivery": "/Date(1717027200000)/",
+        "Delivery1": "/Date(1710115200000)/",
+        "Delivery2": "/Date(1710892800000)/",
+        "Delivery3": "/Date(1711756800000)/",
+        "Creator": "JOSE RADI"
+    },
+    {
+        "PurchaseOrder": "912380200",
+        "Type": "ZSUB",
+        "TypeDescription": "Sub-Contracting",
+        "Category": "P",
+        "CategoryDescription": "Project with GR",
+        "Supplier": "13096033",
+        "SupplierName": "AFNOR",
+        "FullDelivery": "/Date(1717027200000)/",
+        "Delivery1": "/Date(1710115200000)/",
+        "Delivery2": "/Date(1710892800000)/",
+        "Delivery3": "/Date(1711756800000)/",
+        "Creator": "JOSE RADI"
+    },
+    {
+        "PurchaseOrder": "902380120",
+        "Type": "ZSTD",
+        "TypeDescription": "Material",
+        "Category": "P",
+        "CategoryDescription": "Project with GR",
+        "Supplier": "11094561",
+        "SupplierName": "Cloud Security",
+        "FullDelivery": "/Date(1718841600000)/",
+        "Delivery1": "/Date(1710115200000)/",
+        "Delivery2": "/Date(1710892800000)/",
+        "Delivery3": "/Date(1711756800000)/",
+        "Creator": "JOSE RADI"
+    },
+    {
+        "PurchaseOrder": "912380133",
+        "Type": "ZSUB",
+        "TypeDescription": "Sub-Contracting",
+        "Category": "P",
+        "CategoryDescription": "Project with GR",
+        "Supplier": "13096033",
+        "SupplierName": "AFNOR",
+        "FullDelivery": "/Date(1720742400000)/",
+        "Delivery1": "/Date(1710115200000)/",
+        "Delivery2": "/Date(1710892800000)/",
+        "Delivery3": "/Date(1711756800000)/",
+        "Creator": "JOSE RADI"
+    },
+    {
+        "PurchaseOrder": "902380817",
+        "Type": "ZSTD",
+        "TypeDescription": "Material",
+        "Category": "P",
+        "CategoryDescription": "Project with GR",
+        "Supplier": "16291599",
+        "SupplierName": "AWS Inc.",
+        "FullDelivery": "/Date(1729814400000)/",
+        "Delivery1": "/Date(1710115200000)/",
+        "Delivery2": "/Date(1710892800000)/",
+        "Delivery3": "/Date(1711756800000)/",
+        "Creator": "JOSE RADI"
+    }
+]

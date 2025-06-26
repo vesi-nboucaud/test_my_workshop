@@ -1,0 +1,109 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:table="sap.ui.table"
+>
+    <table:Table
+        id="idExercise09Table"
+        rows="{ path: '/GridTableSet', templateShareable: false }"
+        visibleRowCount="3"
+        selectionMode="None"
+    >
+        <table:extension>
+            <OverflowToolbar id="idExercise09OverflowToolbar">
+                <content>
+                    <Title
+                        id="idGridTableTitleExercise09Title"
+                        text="{i18n>Exercise09.fragment.table.title}"
+                        level="H3"
+                    />
+                </content>
+            </OverflowToolbar>
+        </table:extension>
+
+        <table:columns>
+            <table:Column
+                id="idItemExercise09Column"
+                width="6rem"
+                autoResizable="true"
+            >
+                <table:label>
+                    <Text
+                        id="idItemExercise09Text"
+                        text="{i18n>Exercise09.fragment.table.column.text.item}"
+                    />
+                </table:label>
+                <table:template>
+                    <ObjectIdentifier
+                        id="idItemExercise09ObjectIdentifier"
+                        title="{Item}"
+                    />
+                </table:template>
+            </table:Column>
+
+            <table:Column
+                id="idMaterialExercise09Column"
+                minWidth="200"
+                autoResizable="true"
+            >
+                <table:label>
+                    <Text
+                        id="idMaterialExercise09Text"
+                        text="{i18n>Exercise09.fragment.table.column.text.material}"
+                    />
+                </table:label>
+                <table:template>
+                    <ObjectAttribute
+                        id="idMaterialExercise09ObjectAttribute"
+                        text="{MaterialDescription} ({Material})"
+                    />
+                </table:template>
+            </table:Column>
+
+            <table:Column
+                id="idEditExercise09Column"
+                width="5rem"
+                autoResizable="true"
+                hAlign="Center"
+            >
+                <table:label>
+                    <Text
+                        id="idEditExercise09Text"
+                        text="{i18n>Exercise09.fragment.table.column.text.edit}"
+                    />
+                </table:label>
+                <table:template>
+                    <Button
+                        id="idEditExercise09Button"
+                        icon="sap-icon://edit"
+                        press="onButtonEditTableColumnPress"
+                        class="sapUiTinyMarginTop sapUiTinyMarginBottom"
+                    />
+                </table:template>
+            </table:Column>
+
+            <table:Column
+                id="idDeleteExercise09Column"
+                width="5rem"
+                autoResizable="true"
+                hAlign="Center"
+            >
+                <table:label>
+                    <Text
+                        id="idDeleteExercise09Text"
+                        text="{i18n>Exercise09.fragment.table.column.text.delete}"
+                    />
+                </table:label>
+                <table:template>
+                    <Button
+                        id="idDeleteExercise09Button"
+                        icon="sap-icon://delete"
+                        type="Reject"
+                        press="onButtonDeleteTableColumnPress"
+                        class="sapUiTinyMarginTop sapUiTinyMarginBottom"
+                    />
+                </table:template>
+            </table:Column>
+        </table:columns>
+    </table:Table>
+</core:FragmentDefinition>

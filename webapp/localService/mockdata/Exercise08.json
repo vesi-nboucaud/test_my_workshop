@@ -1,0 +1,14 @@
+{
+    "objective": "<p><strong>Objective:</strong></p><p>Learn how to enhance accessibility by providing meaningful <strong>text alternatives</strong> (alt text) for images and icons.</p>",
+    "task": "<p><strong>Task:</strong></p><p>You are provided with a decorative image (in its default state) that currently lacks a descriptive text alternative.</p><p>Modify the code to include an alt attribute, ensuring that screen readers vocalize the purpose of the image.</p>",
+    "expectedResult": "<p><strong>Expected Result:</strong></p>",
+    "instruction": "<p><strong>Instruction:</strong></p><p>In the file <strong>/webapp/exercises/Exercise08.fragment.xml</strong> add the <strong>alt</strong> and <strong>decorative</strong> properties in the <strong>Image</strong> control.</p>",
+    "howToTest": "<p><strong>How to test:</strong></p><ul><li>Use NVDA (Screen Reader) to inspect the image. It should vocalize the descriptive text alternative.</li></ul>",
+    "helpFile": "<p>file <strong>/webapp/exercises/Exercise08.fragment.xml</strong></p>",
+    "helpCode": "<code>&lt;Image<br/>&nbsp;&nbsp;id=\"idExercise08Image\"<br/>&nbsp;&nbsp;src=\"{images&gt;/exercise08}\"<br/>&nbsp;&nbsp;width=\"300px\"<br/>&nbsp;&nbsp;<strong>//Take a look at alt property for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Image\"/>sap.m.Image</a> control</strong><br/>&nbsp;&nbsp;<strong>//Take a look at decorative property for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Image\"/>sap.m.Image</a> control</strong><br/>/&gt;</code>",
+    "parentFragmentId": "idAccessibleNameFragment",
+    "fragmentId": "idProvidingTextAlternativeForImagesAndIconsFragment",
+    "answerFile": "Exercise08.fragment.xml",
+    "answerPass": "cGhvdG8=",
+    "answerCode": "PGNvcmU6RnJhZ21lbnREZWZpbml0aW9uCiAgICB4bWxucz0ic2FwLm0iCiAgICB4bWxuczpjb3JlPSJzYXAudWkuY29yZSIKPgogICAgPEltYWdlCiAgICAgICAgaWQ9ImlkRXhlcmNpc2UwOEltYWdlIgogICAgICAgIHNyYz0ie2ltYWdlcz4vZXhlcmNpc2UwOH0iCiAgICAgICAgd2lkdGg9IjMwMHB4IgogICAgICAgIGFsdD0iVGhpcyBpcyBhbiBpbWFnZSBzaG93aW5nIGEgbm90ZWJvb2siCiAgICAgICAgZGVjb3JhdGl2ZT0iZmFsc2UiCiAgICAvPgo8L2NvcmU6RnJhZ21lbnREZWZpbml0aW9uPg=="
+}

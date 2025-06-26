@@ -1,0 +1,67 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Table
+        id="idProductTableSetExercise18Table"
+        items="{ path: '/ProductTable18Set', templateShareable: false }"
+        autoPopinMode="true"
+    >
+        <headerToolbar>
+            <OverflowToolbar id="idExercise18TableOverflowToolbar">
+                <Title
+                    id="idProductsExercise18Title"
+                    text="{i18n>Exercise18.fragment.table.title}"
+                    level="H2"
+                />
+            </OverflowToolbar>
+        </headerToolbar>
+
+        <columns>
+            <Column id="idProductNameExercise18Column">
+                <Text
+                    id="idProductNameExercise18Text"
+                    text="{i18n>Exercise18.fragment.table.column.text.productName}"
+                />
+            </Column>
+            <Column id="idSupplierNameExercise18Column">
+                <Text
+                    id="idSupplierNameExercise18Text"
+                    text="{i18n>Exercise18.fragment.table.column.text.supplierName}"
+                />
+            </Column>
+            <Column id="idDescriptionExercise18Column">
+                <Text
+                    id="idDescriptionExercise18Text"
+                    text="{i18n>Exercise18.fragment.table.column.text.description}"
+                />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem id="idLine01Exercise18ColumnListItem">
+                <cells>
+                    <Link
+                        id="idProductNameExercise18Link"
+                        text="{ProductName}"
+                        tooltip="{ProductNameTooltip}"
+                        href="{ProductNameUrl}"
+                        emptyIndicatorMode="On"
+                    />
+                    <ObjectIdentifier
+                        id="idSupplierExercise18ObjectIdentifier"
+                        title="{Supplier}"
+                        titleActive="true"
+                        tooltip="{SupplierTooltip}"
+                    />
+                    <Text
+                        id="idDescriptionItemExercise18Text"
+                        text="{Description}"
+                        tooltip="{DescriptionTooltip}"
+                        emptyIndicatorMode="On"
+                    />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

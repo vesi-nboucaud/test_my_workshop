@@ -1,0 +1,105 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Table
+        id="idResponsiveTableSetExercise01Table"
+        items="{ path: '/ResponsiveTableSet', templateShareable: false }"
+        autoPopinMode="true"
+    >
+        <headerToolbar>
+            <OverflowToolbar id="idExercise01OverflowToolbar">
+                <content>
+                    <Title
+                        id="idResponsiveTableTitleExercise01Title"
+                        text="{i18n>Exercise01.fragment.table.title}"
+                        level="H3"
+                    />
+                </content>
+            </OverflowToolbar>
+        </headerToolbar>
+
+        <columns>
+            <Column id="idPurchaseOrderExercise01Column">
+                <Text
+                    id="idPurchaseOrderExercise01Text"
+                    text="{i18n>Exercise01.fragment.table.column.text.purchaseOrder}"
+                />
+            </Column>
+            <Column id="idTypeAndCategoryExercise01Column">
+                <Text
+                    id="idTypeAndCategoryExercise01Text"
+                    text="{i18n>Exercise01.fragment.table.column.text.typeCategory}"
+                />
+            </Column>
+            <Column id="idSupplierExercise01Column">
+                <Text
+                    id="idSupplierExercise01Text"
+                    text="{i18n>Exercise01.fragment.table.column.text.supplier}"
+                />
+            </Column>
+            <Column id="idFullDeliveryExercise01Column">
+                <Text
+                    id="idFullDeliveryExercise01Text"
+                    text="{i18n>Exercise01.fragment.table.column.title.fullDelivery}"
+                />
+            </Column>
+            <Column id="idCreatorExercise01Column">
+                <Text
+                    id="idCreatorExercise01Text"
+                    text="{i18n>Exercise01.fragment.table.column.text.creator}"
+                />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem
+                id="idExercise01ColumnListItem"
+                vAlign="Middle"
+            >
+                <cells>
+                    <ObjectIdentifier
+                        id="idPurchaseOrderExercise01ObjectIdentifier"
+                        title="{PurchaseOrder}"
+                    />
+                    <VBox id="idTypeAndCategoryExercise01VBox">
+                        <ObjectAttribute
+                            id="idTypeExercise01ObjectAttribute"
+                            text="{TypeDescription} - {Type}"
+                        />
+                        <ObjectAttribute
+                            id="idCategoryExercise01ObjectAttribute"
+                            text="{CategoryDescription} ({Category})"
+                        />
+                    </VBox>
+                    <VBox id="idSupplierExercise01VBox">
+                        <ObjectAttribute
+                            id="idSupplierNameExercise01ObjectAttribute"
+                            text="{SupplierName}"
+                        />
+                        <ObjectAttribute
+                            id="idSupplierExercise01ObjectAttribute"
+                            text="({Supplier})"
+                        />
+                    </VBox>
+                    <Link
+                        id="idFullDeliveryExercise01Link"
+                        emphasized="true"
+                        text="{
+                            path: 'FullDelivery',
+                            type: 'sap.ui.model.type.Date',
+                            formatOptions: {
+                                pattern: 'dd.MM.yyyy'
+                            }
+                        }"
+                        press="onFullDeliveryLinkPress"
+                    />
+                    <ObjectAttribute
+                        id="idCreatorExercise01ObjectAttribute"
+                        text="{Creator}"
+                    />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

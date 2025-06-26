@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Button
+        id="idOpenMenuExercise02Button"
+        text="{i18n>Exercise02.fragment.menu.button.open}"
+        icon="sap-icon://menu"
+        width="150px"
+        press="onOpenMenuButtonExercise02Press"
+    />
+</core:FragmentDefinition>

@@ -1,0 +1,206 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:uxap="sap.uxap"
+    xmlns:code="sap.ui.codeeditor"
+    core:require="{
+        formatter: 'com/vesi/zfaca_accessibility_training/model/models'
+    }"
+>
+    <uxap:ObjectPageSubSection
+        id="idExercise01ObjectPageSubSection"
+        title="{i18n>Exercise01.fragment.title}"
+    >
+        <uxap:dependents>
+            <Popover
+                id="idExercise01FullDelliveryPopover"
+                title="{i18n>Exercise01.fragment.popover.title}"
+                initialFocus="idCloseExercise01Button"
+                contentWidth="300px"
+            >
+                <content>
+                    <VBox id="idExercise01FullDelliveryVBox">
+                        <ObjectAttribute
+                            id="idDelivery01Exercise01FullDelliveryObjectAttribute"
+                            title="{i18n>Exercise01.fragment.popover.label.delivery1}"
+                            text="{
+                                path: 'Delivery1',
+                                type: 'sap.ui.model.type.Date',
+                                formatOptions: {
+                                    pattern: 'dd.MM.yyyy'
+                                }
+                            }"
+                            class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"
+                        />
+                        <ObjectAttribute
+                            id="idDelivery02Exercise01FullDelliveryObjectAttribute"
+                            title="{i18n>Exercise01.fragment.popover.label.delivery2}"
+                            text="{
+                                path: 'Delivery2',
+                                type: 'sap.ui.model.type.Date',
+                                formatOptions: {
+                                    pattern: 'dd.MM.yyyy'
+                                }
+                            }"
+                            class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"
+                        />
+                        <ObjectAttribute
+                            id="idDelivery03Exercise01FullDelliveryObjectAttribute"
+                            title="{i18n>Exercise01.fragment.popover.label.delivery3}"
+                            text="{
+                                path: 'Delivery3',
+                                type: 'sap.ui.model.type.Date',
+                                formatOptions: {
+                                    pattern: 'dd.MM.yyyy'
+                                }
+                            }"
+                            class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"
+                        />
+                    </VBox>
+                </content>
+                <footer>
+                    <OverflowToolbar id="idExercise01FullDelliveryOverflowToolbar">
+                        <ToolbarSpacer id="idExercise01FullDelliveryToolbarSpacer" />
+                        <Button
+                            id="idCloseExercise01FullDelliveryButton"
+                            text="{i18n>Exercise01.fragment.popover.button.close}"
+                            press="onCloseButtonFullDelliveryPopoverPress"
+                        />
+                    </OverflowToolbar>
+                </footer>
+            </Popover>
+            <Dialog
+                id="idAnswer01Dialog"
+                resizable="true"
+                draggable="true"
+                contentWidth="600px"
+                title="{i18n>Dialog.answer}"
+            >
+                <content>
+                    <IconTabBar
+                        id="idExercise01IconTabBar"
+                        class="sapUiResponsiveContentPadding"
+                    >
+                        <items>
+                            <IconTabFilter
+                                text="{oExercise01FragmentModel>/answerFile}"
+                                key="{oExercise01FragmentModel>/answerFile}"
+                            >
+                                <Toolbar design="Transparent">
+                                    <content>
+                                        <ToolbarSpacer />
+                                        <Button
+                                            icon="sap-icon://copy"
+                                            text="{i18n>Button.copy}"
+                                            press="onCopyButtonPress"
+                                        >
+                                            <customData>
+                                                <core:CustomData
+                                                    key="answerCode"
+                                                    value="{oExercise01FragmentModel>/answerCode}"
+                                                />
+                                            </customData>
+                                        </Button>
+                                    </content>
+                                </Toolbar>
+                                <code:CodeEditor
+                                    editable="false"
+                                    type="xml"
+                                    value="{
+                                        path: 'oExercise01FragmentModel>/answerCode',
+                                        formatter: 'formatter._dec'
+                                    }"
+                                    height="400px"
+                                />
+                            </IconTabFilter>
+                        </items>
+                    </IconTabBar>
+                </content>
+                <endButton>
+                    <Button
+                        text="{i18n>Button.close}"
+                        press="onCloseButtonDialogPress"
+                    />
+                </endButton>
+            </Dialog>
+        </uxap:dependents>
+        <uxap:blocks>
+            <VBox
+                id="idExercise01VBox"
+                class="sapUiSmallMarginBeginEnd"
+            >
+                <FormattedText
+                    id="idExercise01ObjectiveFormattedText"
+                    htmlText="{oExercise01FragmentModel>/objective}"
+                />
+                <FormattedText
+                    id="idExercise01TaskFormattedText"
+                    htmlText="{oExercise01FragmentModel>/task}"
+                />
+                <FormattedText
+                    id="idExercise01InstructionFormattedText"
+                    htmlText="{oExercise01FragmentModel>/instruction}"
+                />
+                <FlexBox
+                    id="idExercise01FlexBox"
+                    alignItems="Center"
+                    backgroundDesign="Translucent"
+                    class="sapUiSmallMarginBottom"
+                >
+                    <core:Fragment
+                        fragmentName="com.vesi.zfaca_accessibility_training.exercises.Exercise01"
+                        type="XML"
+                    />
+                </FlexBox>
+                <FormattedText
+                    id="idExercise01HowToTestFormattedText"
+                    htmlText="{oExercise01FragmentModel>/howToTest}"
+                />
+                <Panel
+                    id="idExercise01ExpectedResultPanel"
+                    expandable="true"
+                >
+                    <headerToolbar>
+                        <Toolbar id="idExerciseHelp01Toolbar">
+                            <Title
+                                id="idExerciseHelp01Title"
+                                text="{i18n>Panel.exercise.Help}"
+                            />
+                            <ToolbarSpacer id="idExerciseHelp01ToolbarSpacer" />
+                            <Button
+                                id="idUnlockExercise01AnswerButton"
+                                icon="sap-icon://permission"
+                                tooltip="{i18n>Button.unlock.answer}"
+                                press="onButtonUnlockExerciseAnswerPress"
+                            >
+                                <customData>
+                                    <core:CustomData
+                                        key="exercise"
+                                        value="01"
+                                    />
+                                </customData>
+                            </Button>
+                        </Toolbar>
+                    </headerToolbar>
+                    <content>
+                        <FormattedText
+                            id="idExercise01SolutionFormattedText"
+                            htmlText="{oExercise01FragmentModel>/helpFile}"
+                        />
+                        <FormattedText
+                            id="idExercise01CodeFormattedText"
+                            htmlText="{oExercise01FragmentModel>/helpCode}"
+                        />
+                    </content>
+                </Panel>
+            </VBox>
+        </uxap:blocks>
+        <uxap:actions>
+            <RatingIndicator
+                displayOnly="true"
+                maxValue="3"
+                value="1"
+            />
+        </uxap:actions>
+    </uxap:ObjectPageSubSection>
+</core:FragmentDefinition>

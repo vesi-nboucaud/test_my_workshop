@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="idExercise12Dialog"
+        title="Product"
+        class="sapUiResponsivePadding--content sapUiResponsivePadding--header"
+    >
+        <content>
+            <Text
+                id="idNotebookExercise12DialogText"
+                text="Notebook"
+            />
+        </content>
+        <buttons>
+            <Button
+                id="idCloseExercise12DialogButton"
+                text="Close"
+                width="60px"
+                press="onCloseButtonExercise12DialogPress"
+            />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

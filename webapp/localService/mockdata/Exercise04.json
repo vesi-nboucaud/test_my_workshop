@@ -1,0 +1,14 @@
+{
+    "objective": "<p><strong>Objective:</strong></p><p>Learn how to link labels and input fields properly using the <strong>labelFor</strong> property to improve accessibility, particularly for screen readers.</p>",
+    "task": "<p><strong>Task:</strong></p><p>You are given an initial code where a Label and an Input field are created but not properly linked.</p><p>Link the Label and Input properly.</p>",
+    "expectedResult": "<p><strong>Expected Result:</strong></p>",
+    "instruction": "<p><strong>Instruction:</strong></p><p>In the file <strong>/webapp/exercises/Exercise04.fragment.xml</strong> add the <strong>labelFor</strong> and <strong>textAlign</strong> properties in the <strong>Label</strong> control.</p>",
+    "howToTest": "<p><strong>How to test:</strong></p><ul><li>Use NVDA (Screen Reader) to inspect the Input Control. It should vocalize the Label when the Input Control is focused.</li><li>In Chrome Inspector check that in &lt;Label&gt;, the For is linked to the Input Control.</li></ul>",
+    "helpFile": "<p>file <strong>/webapp/exercises/Exercise04.fragment.xml</strong></p>",
+    "helpCode": "<code>&lt;Label<br/>&nbsp;&nbsp;id=\"idFirstNameExercise04Label\"<br/>&nbsp;&nbsp;width=\"150px\"<br/>&nbsp;&nbsp;class=\"sapUiSmallMarginEnd\"<br/>&nbsp;&nbsp;text=\"{i18n>Exercise04.fragment.label}\"<br/>&nbsp;&nbsp;<strong>//Take a look at labelFor association for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Label\"/>sap.m.Label</a> control</strong><br/>&nbsp;&nbsp;<strong>//Take a look at textAlign property for <a href=\"https://sapui5.hana.ondemand.com/1.108.26/#/api/sap.m.Label\"/>sap.m.Label</a> control</strong><br/>/&gt;<br/>&lt;Input id=\"idExercise04Input\" /&gt;</code>",
+    "parentFragmentId": "idAccessibleNameFragment",
+    "fragmentId": "idProvidingLabelsForInputControlsFragment",
+    "answerFile": "Exercise04.fragment.xml",
+    "answerPass": "dHJpZ2dlcg==",
+    "answerCode": "PGNvcmU6RnJhZ21lbnREZWZpbml0aW9uCiAgICB4bWxucz0ic2FwLm0iCiAgICB4bWxuczpjb3JlPSJzYXAudWkuY29yZSIKPgogICAgPExhYmVsCiAgICAgICAgaWQ9ImlkRmlyc3ROYW1lRXhlcmNpc2UwNExhYmVsIgogICAgICAgIHdpZHRoPSIxNTBweCIKICAgICAgICBjbGFzcz0ic2FwVWlTbWFsbE1hcmdpbkVuZCIKICAgICAgICB0ZXh0PSJ7aTE4bj5FeGVyY2lzZTA0LmZyYWdtZW50LmxhYmVsfSIKICAgICAgICBsYWJlbEZvcj0iaWRFeGVyY2lzZTA0SW5wdXQiCiAgICAgICAgdGV4dEFsaWduPSJFbmQiCiAgICAvPgogICAgPElucHV0IGlkPSJpZEV4ZXJjaXNlMDRJbnB1dCIgLz4KPC9jb3JlOkZyYWdtZW50RGVmaW5pdGlvbj4="
+}

@@ -1,0 +1,26 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <SegmentedButton
+        id="idExercise10SegmentedButton"
+    >
+        <items>
+            <SegmentedButtonItem
+                id="idMapExercise10SegmentedButtonItem"
+                text="{i18n>Exercise10.fragment.segmentedButton.map}"
+                width="100px"
+            />
+            <SegmentedButtonItem
+                id="idSatelliteExercise10SegmentedButtonItem"
+                text="{i18n>Exercise10.fragment.segmentedButton.satellite}"
+                width="100px"
+            />
+            <SegmentedButtonItem
+                id="idHybridExercise10SegmentedButtonItem"
+                text="{i18n>Exercise10.fragment.segmentedButton.hybrid}"
+                width="100px"
+            />
+        </items>
+    </SegmentedButton>
+</core:FragmentDefinition>
