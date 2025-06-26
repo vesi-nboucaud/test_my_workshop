@@ -73,7 +73,7 @@ Click below to create your own copy of the workshop project:
 
 ### Launch the App
 
-On 🖥️ VSCode:
+On VSCode:
 * Open the terminal (Terminal -> New Terminal)
 
 * Make sure you are in the project folder
