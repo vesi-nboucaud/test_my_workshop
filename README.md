@@ -1,5 +1,24 @@
 # ZFACA_ACCESSIBILITY
 
+## 🚀 Quick Start with GitHub Codespaces (Recommended)
+
+### 1. Create your own repo
+
+Click below to create your own copy of the workshop project:  
+👉 [https://github.com/devops-vesi/zfaca_accessibility_training/generate](https://github.com/devops-vesi/zfaca_accessibility_training/generate)
+
+- Name your repo: `ui5con-accessibility-workshop-yourname`
+- Leave all checkboxes **unchecked**
+- Click **“Create repository from template”**
+
+### 2. Open in Codespaces
+
+- Open your newly created repo
+- Click **Code > Open with Codespaces > Create new Codespace**
+
+✅ You’ll be ready to code in seconds — no setup needed!
+
+---
 
 
 ## VSCode
